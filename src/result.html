@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your BMI Result</title>
+  <link rel="stylesheet" href="styles/bmi.css" />
+</head>
+<body class="result-page">
+  <div class="container">
+    <h2>Your BMI result</h2>
+    <div class="circle-bmi">
+      <span id="bmiValue">0</span>
+    </div>
+    <p id="bmiCategory">Category</p>
+    <div class="result-details">
+        <div class="result-details">
+            <p><strong>Gender:</strong> <span id="resultGender"></span></p>
+            <p><strong>Age:</strong> <span id="resultAge"></span></p>
+            <p><strong>Weight:</strong> <span id="resultWeight"></span></p>
+            <p><strong>Height:</strong> <span id="resultHeight"></span></p>
+          </div>
+    </div>
+    <div class="bmi-scale">
+      <ul>
+        <li>&lt; 16: Very severely underweight</li>
+        <li>16.0 – 16.9: Severely underweight</li>
+        <li>17.0 – 18.4: Underweight</li>
+        <li>18.5 – 24.9: Normal ✅</li>
+        <li>25.0 – 29.9: Overweight</li>
+        <li>30.0 – 34.9: Obese Class I</li>
+        <li>35.0 – 39.9: Obese Class II</li>
+        <li>≥ 40: Obese Class III</li>
+      </ul>
+    </div>
+    <a href="index.html" class="home-button">🏠 Home</a>
+  </div>
+  <script src="scripts/bmiscript.js"></script>
+</body>
+</html>

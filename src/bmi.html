@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculate BMI</title>
+  <link rel="stylesheet" href="styles/bmi.css" />
+</head>
+<body class="bmi-page">
+  <div class="container">
+    <h2 id="greeting">Hi!</h2>
+    <div class="gender-select">
+      <button id="maleBtn" onclick="selectGender('Male')">👦</button>
+      <button id="femaleBtn" class="active" onclick="selectGender('Female')">👧</button>
+    </div>
+    <form id="bmiForm" onsubmit="return calculateBMI()">
+      <input type="number" id="age" placeholder="Age" required />
+      <input type="number" id="weight" placeholder="Weight (Kg)" required />
+      <input type="number" id="height" placeholder="Height (Cm)" required />
+      <button type="submit">Calculate your BMI</button>
+    </form>
+  </div>
+  <script src="scripts/bmiscript.js"></script>
+</body>
+</html>

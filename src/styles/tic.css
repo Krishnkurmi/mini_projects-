@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 50px;
+}
+
+#tic-tac-toe {
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#tic-tac-toe td {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2em;
+    font-weight: bold;
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#tic-tac-toe td:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+}
+
+#tic-tac-toe td.X {
+    color: #ff6347;
+    animation: markAnimation 0.5s ease;
+}
+
+#tic-tac-toe td.O {
+    color: #4682b4;
+    animation: markAnimation 0.5s ease;
+}
+
+@keyframes markAnimation {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+button, select {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4682b4;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, select:hover {
+    background-color: #5a9bd3;
+}
+
+#scoreboard {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+#scoreboard .score {
+    text-align: center;
+    font-size: 30px;
+}
+
+#scoreboard .score#player1 {
+    color: #ed676b;
+}
+
+#scoreboard .score#player2 {
+    color: #23916b;
+}
